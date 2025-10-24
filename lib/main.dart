@@ -41,7 +41,9 @@ class MyHome extends StatelessWidget {
               ],
             ),
             body: Container(
-              color: Colors.white
+              color: Colors.amberAccent
+              // child: Text("Halo"),
+              
             )
           );
   }
