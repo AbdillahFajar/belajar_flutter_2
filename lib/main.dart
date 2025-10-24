@@ -41,9 +41,33 @@ class MyHome extends StatelessWidget {
               ],
             ),
             body: Container(
-              color: Colors.amberAccent
-              // child: Text("Halo"),
-              
+              // color: Colors.amberAccent,
+              alignment: Alignment.center, //Atur posisi child punya container tapi gak ngatur isi dari child tersebut
+              width: 100,
+              height: 100,
+              // child: 
+              //   Row(
+              //     mainAxisAlignment: MainAxisAlignment.center,
+              //     children: [
+              //       Icon(Icons.login),
+              //       SizedBox(width: 5),
+              //       Icon(Icons.logout),
+              //       SizedBox(width: 5),
+              //       Text("I have no idea, what am i doing.")
+              //     ],
+              //   ),
+              decoration: BoxDecoration(
+                color: Colors.blueAccent,
+                borderRadius: BorderRadius.circular(20),
+                gradient: LinearGradient(
+                                  begin: Alignment.topRight,
+                                  end: Alignment.bottomLeft,
+                                  colors: [
+                                    Colors.red,
+                                    Colors.green,
+                                  ],
+                                ),
+              ),
             )
           );
   }
